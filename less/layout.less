@@ -1,13 +1,13 @@
 .hero {
 	padding: 30px 0px 60px;
-	background: url('../img/carousel.jpeg') repeat center center; 
+	background: url('../img/blindfoldedwoman.jpg') repeat center center; 
 	.background-size(cover);
 	border-bottom: 1px solid @textColor;
 	
 	.marketing {
 		margin: 30px -20px 30px -20px;		
 
-		h1, h2, h3, h4, h5, h6 {
+		h1, h2, h3, h4, h5, h6, p {
 			color: #ffffff;
 			text-align: center;			
 			display: block;
@@ -19,18 +19,33 @@
 			font-family: @baseFontFamily;
 			letter-spacing: 2px;
 			text-transform: uppercase;
-			font-size: 46px;
-			line-height: 62px;			
+			font-size: 18px;
+			line-height: 40px;
+      margin-bottom: 50px;
+      margin-top: 50px;
 		}
+    
+    p.lead-in {
+      margin-top: 30px;
+    }
 
 		p.call-to-action {
 			text-align: center;
-			margin-top: 60px;			
+			margin-top: 20px;			
 			float: none;
 
-			a.btn {
+			/*a.btn {
 				margin-right: 20px;
-			}
+			}*/
+      
+      a.btn-bordered {
+        background: transparent; 
+        background-color: transparent;
+        background-image: none;
+        border: 2px solid @textColorGray;
+        color: white;
+      }
+      
 		}
 	}
 
@@ -82,6 +97,16 @@
 	&.alt {
 		background-color: @lightBackgroundColor;
 	}
+  
+  &.alt-image {
+    background: url('../img/blindfoldedwoman.jpg') repeat center center; 
+    .background-size(cover);
+    
+    h1 {
+      color: red;
+      text-align: center;
+    }
+  }
 
 	&.maps {
 		padding: 0px;
