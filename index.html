@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <meta property="og:title" content="Blindfold Club - Follow these audio scripts whilst she's blindfolded." />
-    <meta property="og:description" content="Discover New Foreplay Moves, Tips and Ideas. Blindfold your girlfriend, lay her on your bed, pop in your earphones and follow the audio script. A revolutionary new way to spice up your sex life!" />
+    <meta property="og:description" content="Discover New Foreplay Moves, Tips and Ideas. Blindfold your girlfriend, lay her on your bed, pop in your earphones and follow along. A revolutionary new way to spice up your sex life!" />
     <meta property="og:url" content="http://blindfold.club" />
     <meta property="og:image" content="http://blindfold.club/img/og-img.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -19,16 +19,25 @@
     <link rel="stylesheet" href="./css/pad.css" type="text/css"> 
     <link href='http://fonts.googleapis.com/css?family=Lato:300italic' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- invlude and initialize audio.js player -->
+    <script src="assets/audiojs/audio.min.js"></script>
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58213867-1', 'auto');
-  ga('send', 'pageview');
-
+      audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+      });
     </script>
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58213867-1', 'auto');
+    ga('send', 'pageview');
+
+      </script>
   </head>
 <body>
     <section class="hero">
@@ -54,7 +63,7 @@
                     <p class="lead-in">Be the first to own 'Blindfold: Irresistibly Tantalizing' by preordering today! <br>
 Available Jan 27th 2015.</p>
                     <p class="call-to-action">
-                        <a href="https://gum.co/blindfold" class="btn btn-large btn-bordered">Preorder Now for $19</a> 
+                        <a href="https://gum.co/blindfold" class="btn btn-large btn-bordered">Preorder Now for $19 <span>$29</span></a> 
                     </p>            
                 </div>
             </article>
@@ -193,11 +202,14 @@ Available Jan 27th 2015.</p>
                     </div>
                     <div class="info">
                         <h4 class="text-center">Blindfold: Irresistibly Tantalizing</h4>
+                        <div class="player">
+                          <audio src="sound/blindfold-sample.mp3" preload="auto" />
+                        </div>
                         <h5 class="text-center">Narrated in a female voice</h5>
                         <p>Our first audio script, "Blindfold: Irresistibily Tantalizing" is a 30 minute guide to touching your partner whilst she's blindfolded. It's a full body, sensory tease focused purely on her pleasure. We take a journey together from head to toe and back again, touching, teasing, playing, nibbling and stroking every corner of her body, and with special attention given to her erogenous zones. Once the 30 minutes are up, you choose what to do next...</p>
                       <p>When you purchase Irresistibly Tantalizing you'll receive a <strong>mp3 file and an introductory PDF</strong> that will give you advice on how to ask your girlfriend or wife about using a blindfold, and bedroom preperation.</p>
-                        <h5>Be the first in line to access "Blindfold: Irresistibly Tantalizing"!</h5>
-                        <a href="https://gum.co/blindfold" class="btn btn-large btn-green rounded text-center">Preorder Now for $19</a>
+                      <h5>Buy at our special prelaunch price and be the first in line to access "Blindfold: Irresistibly Tantalizing"!</h5>
+                      <a href="https://gum.co/blindfold" class="btn btn-large btn-green rounded text-center">Preorder Now for $19 <span>$29</span></a>
                       <br><small><i class="fa fa-lock"></i> Secure payment with Gumroad</small>
                     </div>
                 </div>

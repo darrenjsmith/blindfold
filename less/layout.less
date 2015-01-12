@@ -49,6 +49,10 @@
         background-image: none;
         border: 2px solid @textColorGray;
         color: white;
+        
+        span {
+          text-decoration: line-through;
+        }
       }
       
     
@@ -211,6 +215,10 @@
     text-align: center;
     vertical-align: middle;
 }
+.info > .player {
+  padding-top: 20px;
+}
+
 .info h4 {
     font-size: 24px;
     text-transform: uppercase;
@@ -228,6 +236,9 @@
     padding-top: 10px;
     text-align: justify;
 }
+#audiojs_wrapper0 {
+    margin: 0 auto;
+}
 .info > a {
     border-radius: 2px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -240,8 +251,12 @@
     color: #fff;
     transition: all 0.5s ease 0s;
 }
+.info > a > span {
+  text-decoration: line-through;
+}
 .info > small {
   padding-top: 5px;
+  padding-bottom: 15px;
   display: block;
   color: #666;
 }
