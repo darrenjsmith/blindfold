@@ -30,10 +30,15 @@
     
     p.lead-in {
       margin-top: 30px;
+      font-size: 16px;
     }
     
     p.launchdate {
       margin-top: 10px;
+    }
+    
+    p.text-center {
+      margin-bottom: 0px;      
     }
 
 		p.call-to-action {
@@ -56,7 +61,6 @@
           text-decoration: line-through;
         }
       }
-      
     
 		}
 	}
@@ -75,8 +79,8 @@
 	border-bottom: 1px solid @lightBorderColor;
 	
 	h1, h2, h3, h4, h5, h6 {		
-		text-transform: uppercase;		
-		letter-spacing: 1px;		
+    font-style: italic;
+    
 		&.headline {
 			text-align: center;	
 			display: block;
@@ -221,8 +225,56 @@
     padding: 10px 25px;
     text-align: center;
     display: block;
-    margin-top: 60px;
 }
+
+.box-image {
+    background: url('../img/hands.jpg') repeat center center; 
+    .background-size(cover);
+    height: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.box-image2 {
+    background: url('../img/unzip.jpg') repeat center center; 
+    .background-size(cover);
+    height: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.box-bottom-noshadow {
+    box-shadow: none !important;
+}
+
+
+.box-with-icon {
+    margin-top: 50px;
+    background-color: white;
+    h2 {
+      font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: none;
+      letter-spacing: -1px;
+      font-style: italic;
+      font-size: 40px;
+      font-weight: 100;
+      line-height: 70px;
+    }
+    h3 {
+      font-family: 'Lato',sans-serif;
+      font-weight: 300;
+      text-align: center;
+      text-transform: none;
+      font-style: italic;
+      font-size: 20px;
+    }
+    h4 {
+      padding-top: 20px !important;
+      font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: 100;
+      font-size: 22px; 
+      letter-spacing: -1px;
+    }
+}
+
 .box-icon {
     background-color: #57a544;
     border-radius: 50%;
@@ -232,6 +284,7 @@
     width: 100px;
     margin-top: -61px;
 }
+
 .box-icon span {
     color: #fff;
     display: table-cell;
@@ -242,15 +295,13 @@
   padding-top: 20px;
 }*/
 
-.info h4 {
-    font-size: 24px;
-    text-transform: uppercase;
-    padding-bottom: 0px;
-
+.info h3 {
+  padding-bottom: 0px;
 }
 
-.info h5 {
-  padding-bottom: 20px;
+.info h4 {
+  padding-bottom: 10px;
+  padding-top: 0px
 }
   
 .info > p {
