@@ -1,44 +1,60 @@
 .hero {
 	padding: 30px 0px 60px;
-	background: url('../img/blindfoldedwoman2.jpg') repeat center center; 
+	background: url('../img/blindfoldedwoman2.jpg') repeat center center;
 	.background-size(cover);
 	border-bottom: 1px solid @textColor;
 
 	
 	.marketing {
-		margin: 30px -20px 30px -20px;		
+		margin: 10px -20px 30px -20px;		
 
 		h1, h2, h3, h4, h5, h6, p {
 			color: #ffffff;
 			text-align: center;			
 			display: block;
-			margin: 30px auto;
+			margin: 10px auto;
 		}
+    
+    h1.logo {
+      color: white;
+      font-family: "Pacifico", "Helvetica Neue", Helvetica, Arial, cursive;
+      span {
+        font-size: 28px;
+        padding-left: 2px;
+      }
+    }
 
 		h1.headline {			
 			color: #ffffff;
-			font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 			letter-spacing: -1px;
 			text-transform: none;
       font-style: italic;
-			font-size: 40px;
-      font-weight: 100;
+			font-size: 30px;
+      font-weight: 300;
 			line-height: 55px;
       margin-bottom: 50px;
-      margin-top: 50px;
 		}
-    
-    p.lead-in {
-      margin-top: 30px;
-      font-size: 16px;
-    }
-    
-    p.launchdate {
-      margin-top: 10px;
-    }
-    
-    p.text-center {
-      margin-bottom: 0px;      
+
+    ul.quote {
+      text-align: center;
+      color: #fff;
+      list-style-type: none;
+      li {
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-style: italic;
+        padding-bottom: 20px;
+        font-size: 22px;
+        letter-spacing: -0.04em;
+        line-height: 1em;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); 
+        span {
+          font-size: 14px;
+          letter-spacing: 0px;
+			    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+      }
+
     }
 
 		p.call-to-action {
@@ -63,6 +79,11 @@
       }
     
 		}
+
+    p.text-center {
+      margin-bottom: 0px;      
+    }
+    
 	}
 
 	div.row {
@@ -88,21 +109,32 @@
 		}
 	}	
   
-  h2.headline-quote {
+  h1.headline {
     text-transform: none;
     font-family: 'Lato',sans-serif;
     font-weight: 300;
-    text-align: center;
     font-style: italic;
   }
   
-  h3.headline-quote {
+  h2.headline {
     text-transform: none;
     font-family: 'Lato',sans-serif;
     font-weight: 300;
-    text-align: center;
     font-style: italic;
-    padding-top: 15px;
+  }
+  
+  h3.headline {
+    text-transform: none;
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  h4.headline {
+    text-transform: none;
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-style: italic;
   }
 
 	img.highlight {
@@ -195,15 +227,49 @@ section {
     margin-bottom: 30px;
 }
 
-.intro h2 {
-  padding-bottom: 25px;
+.intro {
+    ul {
+      text-align: center;
+      list-style-type: none;
+      li {
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-style: italic;
+        padding-bottom: 20px;
+        font-size: 22px;
+        letter-spacing: -0.04em;
+        line-height: 1em;
+      }
+    }
+  
+    h2 {
+      padding-bottom: 25px;
+    }
+}
+
+.case-study {
+  h4 {
+    font-weight: 100;
+  }
 }
 
 
-.scenarios h3 {
-  padding-bottom: 20px;
-}
+.scenarios {
 
+  h2 {
+    padding-bottom: 20px;
+  }
+  
+  .label {
+    padding: 8px;
+  }
+  
+  .tags {
+    padding-bottom: 20px;
+  }
+  .player {
+    padding-bottom: 20px;
+  }
+}
 
 
 /*#profile {
@@ -314,10 +380,6 @@ section {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-}
-
-.player {
-  padding-bottom: 20px;
 }
 
 #audiojs_wrapper0 {
