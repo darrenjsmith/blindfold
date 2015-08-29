@@ -183,16 +183,20 @@
 	}
   
   &.alt-quote1 {
-    background: url('../img/hands.jpg') repeat center center; 
+    background: url('../img/hands-color-2.jpg') repeat center center; 
     .background-size(cover);
     
     h2 {
       font-family: 'Lato', sans-serif;
-      font-weight: 300;
-      text-align: center;
+      font-weight: 600;
       color: white;
+      text-align: center;
       text-transform: none;
       font-style: italic;
+      text-shadow: 0px 1px 1px rgba(0,0,0,0.9);
+      small {
+        color: white;
+      }
     }
   }
   
@@ -272,6 +276,7 @@ section {
 			font-size: 20px;
       font-weight: 300;
     }
+    
     .outlet {
       text-align: center; 
       padding-bottom: 25px;
@@ -483,7 +488,7 @@ section {
       font-style: italic;
       font-size: 40px;
       font-weight: 100;
-      line-height: 60px;
+      line-height: 50px;
       padding-bottom: 20px;
     }
     h3 {
@@ -568,6 +573,13 @@ section {
   color: #666;
 }
 
+.principles {
+    a {
+      margin-top: 60px;
+      text-align: center;
+      display: block;
+    }
+}
 
 footer {	
 	padding: 30px 0px;
@@ -601,17 +613,6 @@ footer {
         padding-top: 30px;
         font-size: 50px;
         line-height: normal;
-      }
-      ul.quote {
-        strong {
-          font-size: 34px;
-          line-height: normal;
-          background-color: #000;
-          em {
-            text-decoration: underline;
-          }
-        }
-
       }
     }
   }
